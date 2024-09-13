@@ -1,0 +1,183 @@
+/*Estilizando seletores globais para meu código*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.dark {
+    background-color: #111111;
+    color: #ededed;
+}
+
+.dark-link {
+    color: #f13239;
+    text-decoration: none;
+    border-bottom: 1px solid #f13239; 
+}
+
+.dark-link:hover,
+.dark-link:focus  {
+    color: #ededed;
+    border-bottom: 1px solid #ededed; 
+}
+
+a {
+    padding: 2px 0;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: 0.4s;
+}
+
+.text-center {
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 32px;
+    padding-left: 8px;
+    border-left: 4px solid #f13239;
+}
+
+/*Estilizando section do header (menu)*/
+
+header {
+    padding: 8px 15px;    
+}
+
+header .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 8px;
+    column-gap: 25px;
+}
+
+header img {
+    width: 120px;
+}
+
+
+header ul {
+    list-style: none;
+    display: flex;
+}
+
+
+header a {
+    color: #ededed;
+    margin-right: 15px;    
+    border-bottom: 1px solid #ededed;  
+}
+
+header a:hover,
+header a:focus {
+    color: #f13239;
+    border-bottom: 1px solid #f13239; 
+}
+
+/*Estilizando a section hero*/
+
+.hero {
+    background-image: url(./img/banner.jpg);
+    background-size: cover;
+    background-position: center 25%;
+    height: 320px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.hero h1 {
+    color: #ededed;
+    font-size: 34px;
+    padding: 4px 8px;
+}
+
+/*Estilizando a section galery photos*/
+
+.photos {
+    margin: 65px auto 0;
+    padding: 25px;
+}
+
+.container-img {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.photos h2 {
+    color: #111111;
+}
+
+.container-img figure {
+    flex: 1 1 250px;
+}
+
+.container-img figure img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 16px;
+}
+
+.photos figure figcaption {
+    font-weight: bold;
+}
+
+/*Estilizando a section history*/
+
+.history {
+    padding: 92px 25px;
+    /*border-top: 4px solid #f13239;*/
+}
+
+.history .content .col {
+    flex: 1 1 350px;
+}
+
+.history .content .col img {
+    display: block;
+    width: 100%;
+}
+
+.history p {
+    line-height: 1.5;
+}
+
+.history p + p {
+    margin-top: 25px;
+}
+
+.history .content {
+    display: flex;
+    align-items: center;
+    
+    flex-wrap: wrap;
+    border-bottom: 1px solid #f13239;
+    gap: 25px;
+}
+
+/*Estilizando o footer*/
+
+footer {
+    padding: 65px 25px;
+}
+
